@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cinzel', serif;
+    
+}
+body{
+    background-color: #ccc;
+    background: url(https://th.bing.com/th/id/OIP.xipM9RmqYrYm5ZUSoSIZMgHaEK?pid=ImgDet&rs=1);
+    
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.apply_box{
+    max-width: 600px;
+    padding: 20px;
+    background: url(https://wallpapercave.com/wp/wp4477786.jpg);
+    
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.2);
+    border-radius: 11px;
+    transition: .3s ease-in;
+}
+.apply_box:hover{
+    max-width: 610px;
+    
+    transition: .3s ease-out;
+
+}
+h1 , span{
+    color: white;
+}
+.titel_small{
+    font-size: 22px;
+}
+.form_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px , 1fr));
+    gap: 20px;
+    margin-top: 22px;
+}
+.form_control{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-size: 15px;
+    margin-bottom: 6px;
+    color: white;
+}
+input  , select , textarea{
+    padding: 6px 10px;
+    border: 1px solid rgba(206, 206, 206, 0.945);
+    border-radius: 7px;
+    font-size: 15px;
+}
+input:focus{
+    outline-color: rgb(25, 154, 57);
+}
+.button_container{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+button{
+    background-color: white;
+    border: transparent solid 3px;
+    padding: 5px 10px;
+    color: black;
+    font-size: 17px;
+    font-family: 'Cinzel', serif;
+    border-radius: 10px;
+    transition: 0.3s ease-in;
+}
+button:hover{
+    background-color: grey;
+    color: white;
+    font-size: 18px;
+    font-family: 'Cinzel', serif;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+    
+}
+.textarea_control{
+    grid-column: 1/span 2;
+}
+.textarea_control textarea{
+    width: 100%;
+}
+@media(max-width:460px){
+    
+    .textarea_control{
+        grid-column: 1/span 1;
+    }
+}
